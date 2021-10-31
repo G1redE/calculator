@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-body">
+            <div class="calculator-result">
+                <h1 id="calc-result-output"></h1>
+            </div>
+            <div class="calculator-buttons">
+                <div class="row0">
+                    <div class="button-div">
+                        <button class="calc-button" id="C" onclick="clear1()" >C</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="%" onclick="percent()">%</button>
+                    </div>
+                    <div class="button-div" id='ACdiv'>
+                        <button class="calc-button" id="AC" onclick="allclear()">AC</button>
+                    </div>
+                   
+                </div>
+                
+                <div class="row1">
+                    <div class="button-div">
+                        <button class="calc-button" id="7" value='7' onclick="display('7')">7</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="8" value='8' onclick="display('8')" >8</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="9" value='9' onclick="display('9')">9</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="=" onclick="calculate()">=</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="button-div">
+                        <button class="calc-button" id="4" value='4' onclick="display('4')">4</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="5" value='5' onclick="display('5')">5</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="6" value='6' onclick="display('6')">6</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="+" value='+' onclick="display('+')">+</button>
+                    </div>
+                    
+                </div>
+                <div class="row3">
+                    <div class="button-div">
+                        <button class="calc-button" id="1" value='1' onclick="display('1')">1</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="2" value='2' onclick="display('2')">2</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="3" value='3' onclick="display('3')">3</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="-" value='-' onclick="display('-')">-</button>
+                    </div>
+                    
+                </div>
+                <div class="row4">
+                    <div class="button-div">
+                        <button class="calc-button" id="0" value="0" onclick="display('0')">0</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="." value='.' onclick="display('.')">.</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="*" value='*' onclick="display('*')">*</button>
+                    </div>
+                    <div class="button-div">
+                        <button class="calc-button" id="/" value="/" onclick="display('/')">/</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+<script src="../scripts/index.js"></script>
+</body>
+</html>
